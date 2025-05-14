@@ -1,32 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Senior Project | Karen Castillo</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1 { color: #4CAF50; }
-    a { color: #007ACC; text-decoration: none; }
-    ul { padding-left: 20px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #f5f5f5;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4CAF50;
+    }
+
+    /* HEADER SECTION */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 60px;
+      background-color: #eaf8f0;
+    }
+
+    .hero-text {
+      max-width: 60%;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      color: #2e8b57;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .hero img {
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 40px 60px;
+    }
+
+    h2 {
+      color: #2e8b57;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    .section-box {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
   </style>
 </head>
 <body>
 
-  <h1>👩‍💻 Senior Project</h1>
-  <p>This project explores child development data to identify risk factors affecting school performance. The goal is to support educators with actionable insights using data science tools.</p>
+  <!-- NAVIGATION -->
+  <nav>
+    <div>
+      <a href="#">Home</a>
+      <a href="#features">Key Features</a>
+      <a href="#repo">Repository</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <a href="mailto:krnl141198@gmail.com">krnl141198@gmail.com</a>
+    </div>
+  </nav>
 
-  <h2>📌 Key Features</h2>
-  <ul>
-    <li>Data cleaning and integration from multiple sources</li>
-    <li>Exploratory analysis using Python</li>
-    <li>Visual dashboards for early risk detection</li>
-    <li>Machine learning models for prediction</li>
-  </ul>
+  <!-- BANNER / HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>👩‍💻 Senior Project: Child Development & Risk Factors</h1>
+      <p>This project analyzes child development data to identify early risk factors affecting school performance. Using Python and data visualization tools, it supports educators with actionable insights.</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/4202/4202845.png" alt="Data chart">
+  </div>
 
-  <h2>📁 GitHub Repository</h2>
-  <p><a href="https://github.com/karenlc4/senior_project" target="_blank">View source code on GitHub</a></p>
+  <!-- SECTIONS -->
+  <section id="features" class="section-box">
+    <h2>📌 Key Features</h2>
+    <ul>
+      <li>Data cleaning and integration from multiple sources</li>
+      <li>Exploratory analysis using Python</li>
+      <li>Dashboards for risk detection</li>
+      <li>Machine learning model for prediction</li>
+    </ul>
+  </section>
 
-  <h2>📫 Contact</h2>
-  <p>Email: <a href="mailto:krnl141198@gmail.com">krnl141198@gmail.com</a></p>
+  <section id="repo" class="section-box">
+    <h2>📁 GitHub Repository</h2>
+    <p><a href="https://github.com/karenlc4/senior_project" target="_blank">View project source on GitHub</a></p>
+  </section>
+
+  <section id="contact" class="section-box">
+    <h2>📫 Contact</h2>
+    <p>Email: <a href="mailto:krnl141198@gmail.com">krnl141198@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Karen L Castillo © 2024
+  </footer>
 
 </body>
 </html>
